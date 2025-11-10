@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.log
+
+# Geany
+*.~  
+*.bak  
+*.swp  
+*.swo  
+*.geany
+
+# OS & Misc
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.env
+*.sqlite3
