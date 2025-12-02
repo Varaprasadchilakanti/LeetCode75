@@ -66,8 +66,8 @@ class ConcreteStrategy:
         pass
 
 class Solution:
-    def __init__(self, strategy: StrategyInterface = ConcreteStrategy()) -> None:
-        self.strategy = strategy
+    def __init__(self, strategy: Optional[StrategyInterface] = None) -> None:
+        self.strategy = strategy if strategy is not None else ConcreteStrategy()
 
     def entry_point(self, input_data: Any) -> Any:
         return self.strategy.solve(input_data)
